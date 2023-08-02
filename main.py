@@ -18,6 +18,13 @@ def input():
 # 根据入口与出口条件，选择合适的方案，返回方案代码
 def SystemSelection(inParticle,inWater,inOil,outParticle,outWater,outOil):
     solutionNo=0
+    if outParticle==1 and outWater==1 and outOil==1:
+        solutionNo=1
+    elif outParticle==1 and outWater==2 and outOil==1:
+        solutionNo = 2
+    elif outParticle==1 and outWater==2 and outOil==3:
+        solutionNo = 3
+
     return solutionNo
 
 # 根据产品选型参数
